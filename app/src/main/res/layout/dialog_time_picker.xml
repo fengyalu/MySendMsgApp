@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:background="#FFE8EEF3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#FF999999"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+            <ToggleButton
+                android:visibility="invisible"
+                android:id="@+id/toggle"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:textColor="#FF333333"
+                android:textOff=""
+                android:textOn=""
+                android:checked="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#58b95d"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#58b95d"
+        android:orientation="horizontal">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="年"
+            android:textColor="#FF666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="月"
+            android:textColor="#FF666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日"
+            android:textColor="#FF666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="时"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="分"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="秒"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:orientation="horizontal">
+
+        <cn.com.fyl.learn.mysendmsgapp.view.PickerView
+            android:visibility="gone"
+            android:id="@+id/pickview_year"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <cn.com.fyl.learn.mysendmsgapp.view.PickerView
+            android:visibility="gone"
+            android:id="@+id/pickview_mounth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <cn.com.fyl.learn.mysendmsgapp.view.PickerView
+            android:visibility="gone"
+            android:id="@+id/pickview_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <cn.com.fyl.learn.mysendmsgapp.view.PickerView
+            android:id="@+id/pickview_hour"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <cn.com.fyl.learn.mysendmsgapp.view.PickerView
+            android:id="@+id/pickview_minute"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <cn.com.fyl.learn.mysendmsgapp.view.PickerView
+            android:id="@+id/pickview_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

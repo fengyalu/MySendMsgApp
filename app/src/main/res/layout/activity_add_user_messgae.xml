@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8EEF3"
+        android:orientation="vertical"
+        tools:context="cn.com.fyl.learn.mysendmsgapp.activity.AddUserMessgaeActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#58b95d">
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img"
+                    android:gravity="center"
+                    android:text="添加成员信息"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFFFF">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:text="姓名:"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <cn.com.fyl.learn.mysendmsgapp.utils.CustomEditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/txt_name"
+                    android:background="@null"
+                    android:hint="请输入姓名"
+                    android:paddingLeft="16dp"
+                    android:textColor="#FF999999"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:background="#E8EEF3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFFFF">
+
+                <TextView
+                    android:id="@+id/txt_mobilePhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:text="手机号码:"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <cn.com.fyl.learn.mysendmsgapp.utils.CustomEditText
+                    android:id="@+id/edit_mobilePhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/txt_mobilePhone"
+                    android:background="@null"
+                    android:hint="请输入手机号"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="16dp"
+                    android:textColor="#FF999999"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:background="#E8EEF3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFFFF">
+
+                <TextView
+                    android:id="@+id/txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:text="身份证号码:"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <cn.com.fyl.learn.mysendmsgapp.utils.CustomEditText
+                    android:id="@+id/edit_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/txt_id"
+                    android:background="@null"
+                    android:hint="请输入身份证号码"
+                    android:paddingLeft="16dp"
+                    android:textColor="#FF999999"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/circle_button_type"
+            android:text="确定添加"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/circle_button_type"
+            android:text="查看全部信息"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</layout>

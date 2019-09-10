@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E8EEF3"
+        tools:context="cn.com.fyl.learn.mysendmsgapp.activity.ToosActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#58b95d">
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img"
+                    android:gravity="center"
+                    android:text="设置"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFFFF"
+                android:gravity="center"
+                android:text="开启时间设置"
+                android:textColor="#FF333333"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_time_toos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/time_toos"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_type"
+                    android:text="时间设置"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/add_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_type"
+                    android:text="短信模板设置"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/circle_button_type"
+                    android:text="设置完成"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
